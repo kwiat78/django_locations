@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: django-locations
+Version: 0.2.0
+Summary: A simple Django app for addding tracks made out of locations
+Home-page: UNKNOWN
+Author: Szymon Kwiatkowski
+Author-email: kwiat78@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: =====
+        Locations
+        =====
+        
+        Locations is a simple Django app to add and manages tracks made out of locations.
+        
+        Quick start
+        -----------
+        
+        1. Add "locations" to your INSTALLED_APPS setting:
+        
+            INSTALLED_APPS = [
+                ...
+                'locations',
+        		django_filters,
+            ]
+        
+        2. Include the feeds URLconf in your project urls.py like this::
+        
+            path('locations/', include('locations.urls')),
+        
+        3. Run `python manage.py migrate` to create the feeds models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/admin/
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.8
+Classifier: Framework :: Django REST framework :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
