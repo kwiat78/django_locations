@@ -9,7 +9,7 @@ dist/
 .eggs/
 
 *.egg
-/django_feeds.egg-info/
+/django_locations.egg-info/
 # Unit test / coverage reports
 htmlcov/
 .coverage
