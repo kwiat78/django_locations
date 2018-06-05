@@ -36,7 +36,9 @@ class TrackViewSet(ModelViewSet):
         return Location.objects.filter(edit=True, track__label=label).count() > 0
 
     def get_queryset(self):
-        return Track.objects.filter(user=self.request.user)
+        return Track.objects.filter(user=self.request.user).annotate(start_date=Min('location__date')).order_by(
+            '-start_date'
+        )
 
     def create(self, request, *args, **kwargs):
         context = {
