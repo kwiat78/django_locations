@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -15,7 +17,7 @@ class Track(models.Model):
 class Location(models.Model):
     latitude = models.FloatField(default=0)
     longitude = models.FloatField(default=0)
-    date = models.DateTimeField(auto_now_add=True, blank=True)
+    date = models.DateTimeField(default=datetime.now, blank=True)
     track = models.ForeignKey(Track, null=True)
     position = models.IntegerField(default=0)
     edit = models.BooleanField(default=False)
