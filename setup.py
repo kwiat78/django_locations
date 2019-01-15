@@ -14,7 +14,7 @@ setup(
     install_requires=[
         "Django==1.11.18",
         "djangorestframework==3.6.2",
-        "django-filter==1.0.1",
+        "django-filter==1.0.2",
         "requests==2.20.0",
     ],
     tests_require=[
