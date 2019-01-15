@@ -9,18 +9,18 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django_locations',
-    version='0.2.2',
+    version='0.2.3',
     packages=find_packages(),
     install_requires=[
-        "Django==1.8.6",
+        "Django==1.11.18",
         "djangorestframework==3.6.2",
         "django-filter==1.0.1",
-        "requests==2.9.0",
+        "requests==2.20.0",
     ],
     tests_require=[
         "freezegun==0.3.9",
         "pytz==2015.7",
-        "PyYAML==3.12",
+        "PyYAML==4.2b1",
     ],
     test_suite="runtests",
     include_package_data=True,
