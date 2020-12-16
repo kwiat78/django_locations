@@ -9,10 +9,10 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django_locations',
-    version='0.2.4',
+    version='0.2.5',
     packages=find_packages(),
     install_requires=[
-        "Django==1.11.18",
+        "Django==1.11.29",
         "djangorestframework==3.6.2",
         "django-filter==1.0.2",
         "requests==2.20.0",
