@@ -13,7 +13,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "Django==1.11.29",
-        "djangorestframework==3.9.1",
+        "djangorestframework==3.11.2",
         "django-filter==1.0.2",
         "requests==2.20.0",
     ],
